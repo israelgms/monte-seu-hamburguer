@@ -11,9 +11,9 @@
 <style scoped>
     #main-banner{
         background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('/img/burguer.jpg');
-        background-position: 0 -315px;
+        background-position: bottom;
         background-size: cover;
-        height: 500px;
+        height: 580px;
         display: flex;
         align-items: center;
         justify-content: flex-start;
