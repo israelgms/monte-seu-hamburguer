@@ -1,7 +1,5 @@
 <template>
-    <div id="main-banner">
-        <h1>Monte seu hamburguér</h1>
-    </div>
+    <div id="main-banner"></div>
 </template>
 
 <script>
@@ -12,7 +10,12 @@
 
 <style scoped>
     #main-banner{
-        background-image: url('/img/burguer.jpg');
+        background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('/img/burguer.jpg');
+        background-position: 0 -315px;
+        background-size: cover;
+        height: 500px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
     }
-
 </style>
