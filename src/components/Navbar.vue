@@ -18,7 +18,6 @@ export default {
 <style scoped>
   #nav {
     background-color: var(--pretoPrincipal);
-    border-bottom: 4px solid var(--preto);
     padding: 15px 50px;
     display: flex;
     justify-content: flex-end;

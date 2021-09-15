@@ -13,7 +13,7 @@
         background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('/img/burguer.jpg');
         background-position: bottom;
         background-size: cover;
-        height: 580px;
+        height: 520px;
         display: flex;
         align-items: center;
         justify-content: flex-start;
