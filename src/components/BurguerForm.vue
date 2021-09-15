@@ -1,7 +1,5 @@
 <template>
-    <div>
-        <p>Componente Mensagem</p>
-    </div>
+        <Mensagem :msg="msg" v-show="msg" />
     <div>
         <form id="burguer-form" @submit="createBurguer">
             <h1>Monte o seu burguer: </h1>
@@ -33,15 +31,18 @@
             <div class="input-container">
                 <input type="submit" class="submit-btn" value="Montar Hamburguer">
             </div>
-    
         </form>
-
     </div>
 </template>
 
 <script>
+import Mensagem from "./Mensagem.vue"
+
 export default {
     name: "BurguerForm",
+    components: {
+        Mensagem,
+    },
     data(){
         return{
             paes: null,
@@ -51,7 +52,6 @@ export default {
             pao: null,
             carne: null,
             opcionais: [],
-            status: "Solicitado",
             msg: null,
         }        
     }, 
@@ -68,7 +68,38 @@ export default {
             //Enviando os dados para o "Backend"
             async createBurguer(e){
                 e.preventDefault();
-                console.log("Criou o hamburguer")
+                //criando objeto com todos os dados que foram preenchidos
+                const data = {
+                    nome: this.nome,    //this acessa o data()
+                    carne: this.carne,
+                    pao: this.pao,
+                    opcionais: Array.from(this.opcionais),
+                    status: "Solicitado"
+                }
+                //transformando objeto em texto
+                const dataJson = JSON.stringify(data);
+
+                //Fazendo a requisição utilizando fetch API
+                const req = await fetch("http://localhost:3000/burgers", {
+                    method: "POST",
+                    headers: { "Content-Type": "application/json" },
+                    body: dataJson
+                }); 
+
+                //Recebendo a resposta
+                const res = await req.json();
+                console.log(res);
+
+                //Limpando os campos
+                this.nome = "";
+                this.pao = "";
+                this.carne = "";
+                this.opcionais = "";
+
+                //colocando mensagem:
+                this.msg = `Pedido N° ${res.id} realizado com sucesso`;
+                //limpando mensagem após 3 segundos
+                setTimeout(()=> this.msg = "", 3000);
             }
         },
         mounted(){ // quando o componente for montado, chamar a função getIngredientes
