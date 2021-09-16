@@ -68,4 +68,32 @@ export default {
   padding: 12px;
   border-bottom: 1px solid #ccc;
 }
+
+#burger-table-heading .order-id,
+.burger-table-row .order-number {
+    width: 5%;
+}
+
+select {
+    padding: 12px 6px;
+    margin-right: 12px;
+}
+
+.delete-btn{
+    background-color: var(--pretoPrincipal);
+    color: var(--amarelo);
+    font-weight: bold;
+    border: 2px solid var(--pretoPrincipal);
+    padding: 10px;
+    font-size: 16px;
+    margin: 0 auto;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.delete-btn:hover{
+    background-color: transparent;
+    color: var(--pretoPrincipal);
+}
+
 </style>
