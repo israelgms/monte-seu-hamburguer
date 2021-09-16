@@ -142,6 +142,27 @@
       "opcionais": [],
       "status": "Solicitado",
       "id": 7
+    },
+    {
+      "nome": "Teste",
+      "carne": "Maminha",
+      "pao": "Parmesão e Orégano",
+      "opcionais": [
+        "Bacon"
+      ],
+      "status": "Solicitado",
+      "id": 8
+    },
+    {
+      "nome": "Israel Batista Gomes",
+      "carne": "Picanha",
+      "pao": "Parmesão e Orégano",
+      "opcionais": [
+        "Cheddar",
+        "Tomate"
+      ],
+      "status": "Solicitado",
+      "id": 9
     }
   ]
 }
