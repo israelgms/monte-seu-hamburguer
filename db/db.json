@@ -3,37 +3,51 @@
     "paes": [
       {
         "id": 1,
-        "tipo": "Italiano Branco"
+        "tipo": "Americano"
       },
       {
         "id": 2,
-        "tipo": "3 Queijos"
+        "tipo": "Australiano"
       },
       {
         "id": 3,
-        "tipo": "Parmesão e Orégano"
+        "tipo": "Integral"
       },
       {
         "id": 4,
-        "tipo": "Integral"
+        "tipo": "Italiano"
       }
     ],
     "carnes": [
       {
         "id": 1,
-        "tipo": "Maminha"
-      },
-      {
-        "id": 2,
         "tipo": "Alcatra"
       },
       {
+        "id": 2,
+        "tipo": "Frango"
+      },
+      {
         "id": 3,
-        "tipo": "Picanha"
+        "tipo": "Maminha"
       },
       {
         "id": 4,
-        "tipo": "Veggie burger"
+        "tipo": "Vegetal"
+      }
+    ],
+    "ponto": [
+      {
+        "id": 1,
+        "tipo": "Mal Passada"
+      },
+      {
+        "id": 2,
+        "tipo": "Ao Ponto"
+      },
+      {
+        "id": 3,
+        "tipo": "Bem Passada"
       }
     ],
     "opcionais": [
@@ -47,15 +61,15 @@
       },
       {
         "id": 3,
-        "tipo": "Salame"
+        "tipo": "Ovo"
       },
       {
         "id": 4,
-        "tipo": "Tomate"
+        "tipo": "Carne bovina"
       },
       {
         "id": 4,
-        "tipo": "Cebola roxa"
+        "tipo": "Cebola caramelizada"
       },
       {
         "id": 4,
@@ -77,35 +91,5 @@
       "tipo": "Finalizado"
     }
   ],
-  "burgers": [
-    {
-      "nome": "Teste",
-      "carne": "Maminha",
-      "pao": "Parmesão e Orégano",
-      "opcionais": [
-        "Bacon"
-      ],
-      "status": "Em produção",
-      "id": 8
-    },
-    {
-      "nome": "JOao",
-      "carne": "Maminha",
-      "pao": "Parmesão e Orégano",
-      "opcionais": [
-        "Bacon",
-        "Salame"
-      ],
-      "status": "Solicitado",
-      "id": 9
-    },
-    {
-      "nome": null,
-      "carne": null,
-      "pao": null,
-      "opcionais": [],
-      "status": "Solicitado",
-      "id": 10
-    }
-  ]
+  "burgers": []
 }

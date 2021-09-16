@@ -1,4 +1,5 @@
 <template>
+  <Mensagem :msg="msg" v-show="msg" />
   <div id="burger-table">
     <div>
       <div id="burger-table-heading">
@@ -33,13 +34,16 @@
 </template>
 
 <script>
+import Mensagem from "./Mensagem.vue"
+
 export default {
   name: "Dashboard",
   data(){
       return{
           burgers: null,
           burger_id: null,
-          status: []
+          status: [],
+          msg: "",
       }
   }, methods:{
       async getPedidos(){
@@ -70,6 +74,11 @@ export default {
 
             const res = await req.json();
 
+            //colocando mensagem:
+            this.msg = `Pedido N° ${res.id} deletado com sucesso`;
+            //limpando mensagem após 5 segundos
+            setTimeout(()=> this.msg = "", 5000);
+
             this.getPedidos()
         },
 
@@ -90,6 +99,9 @@ export default {
 
   },mounted(){
       this.getPedidos()
+  },
+  components: {
+    Mensagem
   }
 };
 </script>

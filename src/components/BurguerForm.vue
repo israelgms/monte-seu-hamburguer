@@ -1,5 +1,4 @@
 <template>
-        <Mensagem :msg="msg" v-show="msg" />
     <div>
         <form id="burguer-form" @submit="createBurguer">
             <h1>Monte o seu burguer: </h1>
@@ -10,7 +9,7 @@
             <div class="input-container">
                 <label for="pao">Escolha o pão</label>
                 <select name="pao" id="pao" v-model="pao">
-                    <option value="">Selecione o seu pão</option>
+                    <option value="">Selecione o tipo de pão</option>
                     <option v-for="pao in paes" :key="pao.id" :value="pao.tipo">{{pao.tipo}}</option>
                 </select>
             </div>    
@@ -27,7 +26,8 @@
                     <input type="checkbox" name="opcionais" v-model="opcionais" :value="opcional.tipo">
                     <span>{{opcional.tipo}}</span>
                 </div>
-            </div>    
+            </div>  
+            <Mensagem :msg="msg" v-show="msg" />
             <div class="input-container">
                 <input type="submit" class="submit-btn" value="Montar Hamburguer">
             </div>
@@ -99,12 +99,12 @@ export default {
                 //colocando mensagem:
                 this.msg = `Pedido N° ${res.id} realizado com sucesso`;
                 //limpando mensagem após 3 segundos
-                setTimeout(()=> this.msg = "", 3000);
+                setTimeout(()=> this.msg = "", 5000);
             }
         },
         mounted(){ // quando o componente for montado, chamar a função getIngredientes
-            this.getIngredientes()
-        }
+                this.getIngredientes()
+        },
 }
 </script>
 
