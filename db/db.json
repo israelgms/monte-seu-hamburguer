@@ -79,16 +79,25 @@
   ],
   "burgers": [
     {
-      "nome": "Israel Batista Gomes",
-      "carne": "Alcatra",
+      "nome": "Teste",
+      "carne": "Maminha",
+      "pao": "Parmesão e Orégano",
+      "opcionais": [
+        "Bacon"
+      ],
+      "status": "Em produção",
+      "id": 8
+    },
+    {
+      "nome": "JOao",
+      "carne": "Maminha",
       "pao": "Parmesão e Orégano",
       "opcionais": [
         "Bacon",
-        "Salame",
-        "Pepino"
+        "Salame"
       ],
       "status": "Solicitado",
-      "id": 1
+      "id": 9
     },
     {
       "nome": null,
@@ -96,73 +105,7 @@
       "pao": null,
       "opcionais": [],
       "status": "Solicitado",
-      "id": 2
-    },
-    {
-      "nome": "asdasd",
-      "carne": "Alcatra",
-      "pao": "Italiano Branco",
-      "opcionais": [
-        "Bacon",
-        "Salame"
-      ],
-      "status": "Solicitado",
-      "id": 3
-    },
-    {
-      "nome": "adsasd",
-      "carne": "Alcatra",
-      "pao": "3 Queijos",
-      "opcionais": [
-        "Bacon"
-      ],
-      "status": "Solicitado",
-      "id": 4
-    },
-    {
-      "nome": "ISRAELBATISTAGOMES",
-      "carne": "Alcatra",
-      "pao": "Parmesão e Orégano",
-      "opcionais": [],
-      "status": "Solicitado",
-      "id": 5
-    },
-    {
-      "nome": "asdasd",
-      "carne": "Maminha",
-      "pao": "3 Queijos",
-      "opcionais": [],
-      "status": "Solicitado",
-      "id": 6
-    },
-    {
-      "nome": "dasdasdsa",
-      "carne": "Alcatra",
-      "pao": "3 Queijos",
-      "opcionais": [],
-      "status": "Solicitado",
-      "id": 7
-    },
-    {
-      "nome": "Teste",
-      "carne": "Maminha",
-      "pao": "Parmesão e Orégano",
-      "opcionais": [
-        "Bacon"
-      ],
-      "status": "Solicitado",
-      "id": 8
-    },
-    {
-      "nome": "Israel Batista Gomes",
-      "carne": "Picanha",
-      "pao": "Parmesão e Orégano",
-      "opcionais": [
-        "Cheddar",
-        "Tomate"
-      ],
-      "status": "Solicitado",
-      "id": 9
+      "id": 10
     }
   ]
 }
