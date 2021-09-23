@@ -2,6 +2,7 @@
   <div class="main-container">
     <Dashboard />
   </div>
+  <div class="espacamento"></div>
 </template>
 
 <script>
@@ -14,3 +15,9 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+  .espacamento{
+    margin-top: 420px;
+  }
+</style>

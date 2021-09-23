@@ -75,7 +75,7 @@ export default {
             const res = await req.json();
 
             //colocando mensagem:
-            this.msg = `Pedido N° ${res.id} deletado com sucesso`;
+            this.msg = `Pedido cancelado com sucesso`;
             //limpando mensagem após 5 segundos
             setTimeout(()=> this.msg = "", 5000);
 

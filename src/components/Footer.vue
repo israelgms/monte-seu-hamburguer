@@ -1,6 +1,6 @@
 <template>
 <footer id="footer">
-    <p>Israel Gomes. Monte seu Hamburguer &copy; 2021</p>
+    <p>Israel Gomes. Monte seu Hambúrguer &copy; 2021</p>
 </footer>
 </template>
 
