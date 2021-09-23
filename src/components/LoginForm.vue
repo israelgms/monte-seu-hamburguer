@@ -24,16 +24,12 @@
 <script>
 export default {
   name: "LoginForm",
-  data() {
-    return {};
-  },
   methods: {
     login(e) {
       e.preventDefault();
-      alert("Funcionalidade em andamento");
-    },
-  },
-};
+    }
+}
+}
 </script>
 
 <style scoped>
