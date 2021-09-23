@@ -91,11 +91,5 @@
       "tipo": "Finalizado"
     }
   ],
-  "burgers": [],
-  "autentificacao": [
-    {
-      "login": "atendimento@monteseuhamburguer.com",
-      "password": "123456"
-    }
-  ]
+  "burgers": []
 }
