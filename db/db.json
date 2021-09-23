@@ -91,5 +91,17 @@
       "tipo": "Finalizado"
     }
   ],
-  "burgers": []
+  "burgers": [
+    {
+      "nome": "dasdsadsadas",
+      "carne": "Maminha",
+      "pao": "Australiano",
+      "opcionais": [
+        "Bacon",
+        "Ovo"
+      ],
+      "status": "Solicitado",
+      "id": 1
+    }
+  ]
 }

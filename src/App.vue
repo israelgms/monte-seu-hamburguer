@@ -27,7 +27,6 @@ export default{
   * {
     font-family: Arial, Helvetica, sans-serif;
     padding: 0;
-    border: none;
     margin: 0;
     list-style: none;
     box-sizing: border-box;
