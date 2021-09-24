@@ -23,7 +23,6 @@ export default{
 </script>
 
 <style>
-
   * {
     font-family: Arial, Helvetica, sans-serif;
     padding: 0;

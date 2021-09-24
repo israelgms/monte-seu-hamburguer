@@ -5,11 +5,16 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "backend": "json-server --watch db/db.json"
+    "backend": "json-server --watch db/db.json",
+    "knex-dev": "SET NODE_ENV=development&& node ./node_modules/knex/bin/cli.js migrate:latest",
+    "knex-seed": "SET NODE_ENV=development&& node ./node_modules/knex/bin/cli.js seed:run"
   },
   "dependencies": {
     "core-js": "^3.6.5",
+    "global": "^4.4.0",
     "json-server": "^0.16.3",
+    "knex": "^0.95.11",
+    "mysql2": "^2.3.0",
     "vue": "^3.0.0",
     "vue-router": "^4.0.0-0"
   },
