@@ -1,0 +1,98 @@
+{
+  "ingredientes": {
+    "paes": [
+      {
+        "id": 1,
+        "tipo": "Americano"
+      },
+      {
+        "id": 2,
+        "tipo": "Australiano"
+      },
+      {
+        "id": 3,
+        "tipo": "Integral"
+      },
+      {
+        "id": 4,
+        "tipo": "Italiano"
+      }
+    ],
+    "carnes": [
+      {
+        "id": 1,
+        "tipo": "Alcatra"
+      },
+      {
+        "id": 2,
+        "tipo": "Frango"
+      },
+      {
+        "id": 3,
+        "tipo": "Maminha"
+      },
+      {
+        "id": 4,
+        "tipo": "Vegetal"
+      }
+    ],
+    "ponto": [
+      {
+        "id": 1,
+        "tipo": "Mal Passada"
+      },
+      {
+        "id": 2,
+        "tipo": "Ao Ponto"
+      },
+      {
+        "id": 3,
+        "tipo": "Bem Passada"
+      }
+    ],
+    "opcionais": [
+      {
+        "id": 1,
+        "tipo": "Bacon"
+      },
+      {
+        "id": 2,
+        "tipo": "Cheddar"
+      },
+      {
+        "id": 3,
+        "tipo": "Ovo"
+      },
+      {
+        "id": 4,
+        "tipo": "Carne bovina"
+      },
+      {
+        "id": 4,
+        "tipo": "Cebola caramelizada"
+      },
+      {
+        "id": 4,
+        "tipo": "Pepino"
+      }
+    ]
+  },
+  "status": [
+    {
+      "id": 1,
+      "tipo": "Solicitado"
+    },
+    {
+      "id": 2,
+      "tipo": "Em produção"
+    },
+    {
+      "id": 3,
+      "tipo": "Finalizado"
+    }
+  ],
+  "burgers": [],
+  "burgersEmProducao": [
+    {}
+  ]
+}
